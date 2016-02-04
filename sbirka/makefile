@@ -33,4 +33,9 @@ single.pdf: templates/single_template.tex
 clean:
 	rm -f *.{dvi,aux,log,out} single.*
 	cd src/algebra && make clean
+	cd src/logika&& make clean
+	cd src/funkcionalni_analyza && make clean
+	cd src/grafy && make clean
+
+
 
