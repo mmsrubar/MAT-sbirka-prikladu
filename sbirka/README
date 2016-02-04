@@ -1,0 +1,9 @@
+PRIDANI NOVEHO ZADANI
+=====================
+
+Over si, ze je zadani spravne pomocí příkazu:
+
+make ARGS='cesta-k-latexovemu-zadani' single.pdf
+
+Příklad:
+make ARGS=predikatova_logika/dukazy/1.tex single.pdf

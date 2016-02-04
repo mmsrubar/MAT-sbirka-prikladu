@@ -1,0 +1,52 @@
+\subsubsection{}
+Uvažujme jazyk L s jedním binárním predikátovým symbolem p a jedním binárním
+funkčním symbolem f.
+
+\begin{enumerate}
+  \item Najděte nějakou realizaci jazyka L na množině $\left \{ 1,2,3 \right
+  \}$.
+  \item Nechť $\varphi$ je následující formule jazyka L: $\forall z \forall y
+  \exists z p(f(x,z),y)$
+\end{enumerate}
+
+Uvažujme realizaci $\Re$ jazyka L s univerzem N, kde $p_{\Re}$ je relace
+uspořádání $\leq$ a $f_{\Re}$ je násobení přirozených čísel. Rozhodněte, zda
+$\Re$ je modelem teorie $\varphi$ a svoje rozhodnutí odůvodněte.
+\subsubsection{}
+Buď $\varphi$ nasledující formule: $\forall x \forall y (x < y \Rightarrow
+\exists z (x<z\wedge z<y))$. Bez použití
+spojky $\neg$ napiště negaci formule $\varphi$. Určete, zda je pravdiva formule
+$\varphi$ nebo její
+negace, jestliže univerzem je množina $\mathbb{Z}$ (celých čísel).
+\subsubsection{}
+Uvažujme jazyk $L$ s rovností, jedním binárním funkčním symbolem $f$ a
+predikátovými symboly $p$ a $q$ arit 1 a 3. Necht' $\Re$ je realizace jazyka $L$, 
+kde univerzem je $P(\mathbb{N})$, tj. množina všech podmnožin množiny přirozených čísel, a symboly se realizují
+na množinách $A, B, C \subseteq  N$ následovně:
+
+$$f_{\Re }(A,B)=A\cap B$$
+$$A \in P_{\Re} \Leftrightarrow A \neq \phi $$
+$$(A,B,C) \in q_{\Re} \Leftrightarrow A \cap B \cap C$$ je konečná.
+Rozhodněte, zda jsou následující formule splněny v $\Re$:
+\begin{enumerate}[1)]
+  \item $\forall x \forall y q(x,yf(x,y))$
+  \item $p(f(x,y)) \Rightarrow (p(x) \wedge p(y))$
+  \item $p(x) \wedge p(y) \Rightarrow \forall z q(x,y,z)$
+  \item $p(x) \Rightarrow q(x, f(x,x), x)$
+\end{enumerate}
+\subsubsection{}
+Buď L jazyk predikátové logiky 1. řádu a rovností, jedním binárním predikátovým
+symbolem $p$ a jedním unárním funkčním symbolem $f$.  Nechť $T$ je teorie 1.
+řádu s jazykem L daná následujícími dvěma speciálními axiomy:
+
+$$ p(f(x), x)$$
+$$f(f(x)) = f(f(y)) \Rightarrow p(x,y)$$
+
+Uvažujme realizaci $M=(\mathbb{Q}, \leq, h)$ jazkyka L, kde $\leq p_{M}$ a
+operace $h=f_{M}$ na množině $\mathbb{Q}$ je definována předpisem $h(a) =
+\frac{a}{2}$ pro libovolné $a \in \mathbb{Q}$. Rozhodněte, zda:
+
+\begin{enumerate}[a)]
+  \item $M$ je modelem teorie $T$
+  \item $f(f(x)) = f(f(y)) \Rightarrow p(f(x), y)$ je důsledkem teorie T.
+\end{enumerate}

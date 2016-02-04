@@ -1,0 +1,55 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Upravená původní dokumentace od Davida Martinka.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt,a4paper,notitlepage,final]{article}
+
+% cestina a fonty
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+\usepackage{enumerate}
+%\usepackage{bashful}
+% balicky pro odkazy
+\usepackage[bookmarksopen,colorlinks,plainpages=false,urlcolor=blue,unicode]{hyperref}
+\usepackage{url}
+% obrazky
+\usepackage[dvipdf]{graphicx}
+% velikost stranky
+\usepackage[top=1.5cm, left=2.5cm, text={17cm, 24cm}, ignorefoot]{geometry}
+
+\author{Michal Šrubař\\xsruba03@stud.fit.vutbr.cz}
+\date{\today}	
+\title{Sbírka příkladů do MATu}
+
+\begin{document}
+\maketitle
+
+%\def\projname{\footnote{Matematické struktury v
+%informatice, VUT FIT}}
+
+\section{Proč} \label{proc}
+
+\section{Logika} \label{logika}
+\subsection{Důkazy výrokových formulí}        \input{src/logika/dukazy_log_formuli.tex}
+\subsection{Důkazy predikátových formulí}     \input{src/logika/dukazy_pred_formuli.tex}
+\subsection{Realizace}                        \input{src/logika/realizace.tex}
+\subsection{Prenexní tvar}                    \input{src/logika/prenexni_tvar.tex}
+
+\section{Algebra}
+\subsection{Grupy, podgrupy, cyklické grupy}  \input{src/algebra/grupy.tex}
+\subsection{Morfismy}                         \input{src/algebra/morfismy.tex}
+\subsection{Kongruence}                       \input{src/algebra/kongruence.tex}
+\subsection{Zbytkové třídy}                   \input{src/algebra/zbytkove_tridy.tex}
+
+\section{Funkcionalni analýza}
+\subsection{Metrické prostory}                	\input{src/funkcionalni_analyza/metriky.tex}
+\subsection{Normované prostory}                	\input{src/funkcionalni_analyza/normy.tex}
+\subsection{Unitární prostory}                	\input{src/funkcionalni_analyza/vektory.tex}
+
+\section{Grafy}
+\subsection{Nazelezeni grafu}                	\input{src/grafy/grafy.tex}
+\subsection{Nazeteni minimální kostry} 				\input{src/grafy/min_kostry.tex}
+
+\end{document}

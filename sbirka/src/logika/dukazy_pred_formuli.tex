@@ -1,0 +1,56 @@
+\subsubsection{}
+Provedte důkaz formule
+$$\varphi ,(\forall x\varphi\rightarrow \psi )\vdash \forall x \psi$$
+dle následujícího návodu:
+
+\begin{enumerate}
+  \item Vezměte formuli $\varphi$ jako předpoklad
+  \item užijte pravidlo zobecnění
+  \item vezměte formuli $\forall x \varphi \rightarrow \psi $ jako předpoklad
+  \item užijte pravidlo odloučení (modus ponens)
+  \item užijte pravidlo zobecnění.
+\end{enumerate}
+\subsubsection{}
+Dokažte větu $\exists x(\neg \varphi) \rightarrow(\forall x \varphi \rightarrow
+\psi)$ Postup:
+
+\begin{enumerate}
+  \item Použijte tautologii $\varphi \rightarrow \neg \neg \varphi$.
+  \item Proveďte distribuci kvantifikátoru $\forall$.
+  \item Užijte třetí axiom výrokové logiky ve tvaru $(A \rightarrow B)
+  \rightarrow (\neg B \rightarrow \neg A)$.
+  \item Aplikujte pravidlo odloučení.
+  \item Použijte tautologii $\neg (\forall x \varphi) \rightarrow(\forall x \varphi \rightarrow
+\psi)$.
+  \item Složte implikace ze (4) a (5).
+  \item Proveďte úpravu (nahraďte kvantifikátor $\forall x$ kvantifikátorem
+  $\exists x)$.
+\end{enumerate}
+\subsubsection{}
+Napište důkaz věty $\vdash \forall x (\varphi \rightarrow \psi) \rightarrow
+(\forall x \varphi \rightarrow \forall x \psi)$. Návod:
+
+\begin{enumerate}
+  \item Vezměte formuli $\forall x \varphi$ jako předpoklad, pak užijte axiom substituce a
+následně pravidlo odloučení
+  \item Potom vezměte formuli $\forall x (\varphi \rightarrow \psi)$ jako předpoklad a opět užijte axiom
+substituce a následně pravidlo odloučení
+  \item Na formule získané v krocích 1) a 2) aplikujte pravidlo odloučení a na
+výslednou formuli pravidlo zobecnění
+  \item Poslední získana formule je tedy dokazatelná z formulí, které byly vzaty
+jako předpoklady. Nyní užijte 2x větu o dedukci
+\end{enumerate}
+\subsubsection{}
+Dokažte, že platí $\vdash (\varphi \wedge \exists x \psi) \Rightarrow \exists
+x(\varphi \wedge \psi)$. Návod:
+
+\begin{enumerate}
+  \item Vezměte formuli $\neg ( \exists x(\varphi \wedge \psi))$ jako předpoklad
+  \item axiom kvantifikátoru
+  \item pravidlo odloučení
+  \item získanou formuli převeďte do tvaru negace (formule)
+  \item poslddní formule je dokázána z formule předpokládané v 1, proto
+  aplikujte na obě formule větu o dedukci
+  \item užijte třetí výrokový axiom
+  \item opět aplikujte větu o dedukci.
+\end{enumerate}
