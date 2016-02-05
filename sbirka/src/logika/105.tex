@@ -1,0 +1,15 @@
+\subsubsection{}
+Napište důkaz věty $\vdash \forall x \neg \varphi \Rightarrow \forall x (\varphi \Rightarrow \psi)$. Návod:
+\begin{enumerate}[a)]
+	\item Vezměte formuli $\forall x \neg \varphi$ jako předpoklad, pak užijte
+    axiom substituce (ve formuli $\neg \varphi$ substituujte $x$ za $x$) a
+    pravidlo odloučení.
+  \item Vezměte axiom A1 výrokové logiky ve tvaru $\neg \varphi \Rightarrow
+    (\neg \varphi \Rightarrow \neg \varphi)$ a aplikujte na něj a na formuli
+    získanou v kroku a) pravidlo odloučení.
+  \item Vezměte axiom A3 výrokové logiky a aplikujte na něj a na formuli
+    získanou v kroku b) pravidlo odloučení, na výslednou formuli pak aplikujte
+    pravidlo zobecnění.
+  \item Poslední získaná formule je teď dokazatelná z formule, která byla vzata
+    jako předpoklad. Nyní užijte větu o dedukci.
+\end{enumerate}

@@ -13,6 +13,8 @@ realizace.tex: $(src_realizace)
 	bash -c "cat $(src_realizace) > realizace.tex"
 prenexni_tvar.tex: $(src_prenexni_tvar)
 	bash -c "cat $(src_prenexni_tvar) > prenexni_tvar.tex"
+test: $(wildcard 21*)
+	bash -c "cat $(wildcard 21*) > test.out"
 
 clean:
 	rm -f dukazy_log_formuli.tex dukazy_pred_formuli.tex realizace.tex prenexni_tvar.tex
