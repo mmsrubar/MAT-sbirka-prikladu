@@ -1,7 +1,7 @@
 all: grafy.tex min_kostry.tex
 
-src_grafy := $(wildcard 0*.tex)
-src_min_kostry := $(wildcard 1*.tex)
+src_grafy := $(sort $(wildcard 0*.tex))
+src_min_kostry := $(sort $(wildcard 1*.tex))
 
 grafy.tex: $(src_grafy)
 	bash -c "cat $(src_grafy) > grafy.tex"

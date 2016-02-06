@@ -1,9 +1,9 @@
 all: dukazy_log_formuli.tex dukazy_pred_formuli.tex realizace.tex prenexni_tvar.tex
 
-src_dukazy_log_formuli := $(wildcard 0*.tex)
-src_dukazy_pred_formuli := $(wildcard 1*.tex)
-src_realizace := $(wildcard 2*.tex)
-src_prenexni_tvar := $(wildcard 3*.tex)
+src_dukazy_log_formuli := $(sort $(sort $(wildcard 0*.tex)))
+src_dukazy_pred_formuli := $(sort $(sort $(wildcard 1*.tex)))
+src_realizace := $(sort $(sort $(wildcard 2*.tex)))
+src_prenexni_tvar := $(sort $(sort $(wildcard 3*.tex)))
 
 dukazy_log_formuli.tex: $(src_dukazy_log_formuli)
 	bash -c "cat $(src_dukazy_log_formuli) > dukazy_log_formuli.tex"
