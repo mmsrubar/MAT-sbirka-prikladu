@@ -1,0 +1,11 @@
+Uvažujme jazyk L s rovností, unárním predikátovým symbolem $v$, unárním funkčním
+symbolem $d$ a binárním funkčním symbolem $g$. Nechť M je realizace jazyka L s
+univerzem $\mathbb{R}^{2}$, kde
+$$d_{M}(a,b)=(b,a)$$
+$$g_{M}((a,b),(c,d))=\left\{\begin{matrix}
+(a,b),b \neq c\\(a,d), b=c
+\end{matrix}\right.$$
+Uvažujme teorii: $T=\left \{ \left ( x=d(x) \right )\rightarrow
+v(x),v(x)\rightarrow v(d(x)), (v(x)\wedge v(y))\rightarrow v(g(x,y))\right \}$
+Najděte unární relaci $v_{M}$ takovou, aby realizace M byla modelem teorie $T$ a
+rozhodněte, zda $T\models v(d(x)) \rightarrow v(x)$.
