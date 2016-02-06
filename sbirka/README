@@ -1,6 +1,6 @@
 INSTALL
 =======
-dnf install -y texlive texlive-cslatex texlive-collection-langczechslovak
+dnf install -y texlive texlive-cslatex texlive-collection-langczechslovak xfig
 
 PRIDANI NOVEHO ZADANI
 =====================

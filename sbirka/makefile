@@ -15,13 +15,12 @@ priklady:
 	(cd src/grafy && make)
 	(cd src/funkcionalni_analyza && make)
 
-$(NAME).pdf: $(NAME).dvi
-	dvipdf $(NAME).dvi
+#$(NAME).pdf: $(NAME).dvi
+#	dvipdf $(NAME).dvi
 
-$(NAME).dvi: $(NAME).tex $(ALGEBRA) $(LOGIKA) $(ANALYZA) $(GRAFY)
-	latex $(NAME).tex
-	latex $(NAME).tex
-	echo -c "algebra: $(ALGEBRA)"
+$(NAME).pdf: $(NAME).tex $(ALGEBRA) $(LOGIKA) $(ANALYZA) $(GRAFY)
+	pdflatex $(NAME).tex
+	pdflatex $(NAME).tex
 
 single.pdf: templates/single_template.tex
 	bash -c "cp templates/single_template.tex single.tex"
