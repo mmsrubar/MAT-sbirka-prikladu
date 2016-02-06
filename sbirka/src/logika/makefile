@@ -1,6 +1,6 @@
 all: dukazy_log_formuli.tex dukazy_pred_formuli.tex realizace.tex prenexni_tvar.tex
 
-src_dukazy_log_formuli := $(sort $(sort $(wildcard zadani/2-1-*.tex)))
+src_dukazy_log_formuli := $(sort $(sort $(wildcard zadani/0*.tex)))
 src_dukazy_pred_formuli := $(sort $(sort $(wildcard zadani/1*.tex)))
 src_realizace := $(sort $(sort $(wildcard zadani/2*.tex)))
 src_prenexni_tvar := $(sort $(sort $(wildcard zadani/3*.tex)))
