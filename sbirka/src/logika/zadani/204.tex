@@ -1,0 +1,16 @@
+\subsubsection{}
+Uvažujme jazyk $L$ s rovností, jedním binárním funkčním symbolem $f$ a
+predikátovými symboly $p$ a $q$ arit 1 a 3. Nechť $\Re$ je realizace jazyka $L$, 
+kde univerzem je $P(\mathbb{N})$, tj. množina všech podmnožin množiny přirozených čísel, a symboly se realizují
+na množinách $A, B, C \subseteq  N$ následovně:
+
+$$f_{\Re }(A,B)=A\cap B$$
+$$A \in P_{\Re} \Leftrightarrow A \neq \phi $$
+$$(A,B,C) \in q_{\Re} \Leftrightarrow A \cap B \cap C$$ je konečná.
+Rozhodněte, zda jsou následující formule splněny v $\Re$:
+\begin{enumerate}[1)]
+  \item $\forall x \forall y q(x,yf(x,y))$
+  \item $p(f(x,y)) \Rightarrow (p(x) \wedge p(y))$
+  \item $p(x) \wedge p(y) \Rightarrow \forall z q(x,y,z)$
+  \item $p(x) \Rightarrow q(x, f(x,x), x)$
+\end{enumerate}
