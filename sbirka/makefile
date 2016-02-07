@@ -10,7 +10,6 @@ GRAFY = src/grafy/grafy.tex src/grafy/min_kostry.tex
 all: priklady $(NAME).pdf
 
 priklady:
-	bash -c "sh empty_solution.sh"
 	(cd src/algebra && make)
 	(cd src/logika && make)
 	(cd src/grafy && make)
