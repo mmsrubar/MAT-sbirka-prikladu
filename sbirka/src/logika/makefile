@@ -34,15 +34,24 @@ define reseni =
 	done
 endef
 
-dukazy_log_formuli.tex: $(src_dukazy_log_formuli)
-	bash -c "cat $? > $@"
-dukazy_pred_formuli.tex: $(src_dukazy_pred_formuli)
-	bash -c "cat $? > $@"
-realizace.tex: $(src_realizace)
-	bash -c "cat $? > $@"
-prenexni_tvar.tex: $(src_prenexni_tvar)
-	bash -c "cat $? > $@"
+define zadani =
+	rm -rf $@
+	for i in $?; do \
+		echo -e "\subsubsection{}" >> $@; \
+		cat $$i >> $@; \
+	done
+endef
 
+dukazy_log_formuli.tex: $(src_dukazy_log_formuli)
+	$(zadani)
+dukazy_pred_formuli.tex: $(src_dukazy_pred_formuli)
+	$(zadani)
+realizace.tex: $(src_realizace)
+	$(zadani)
+prenexni_tvar.tex: $(src_prenexni_tvar)
+	$(zadani)
+
+#FIXME: do zavislosti by se mely pridat i reseni
 dukazy_log_formuli-reseni.tex: $(src_dukazy_log_formuli)
 	$(reseni)
 dukazy_pred_formuli-reseni.tex: $(src_dukazy_pred_formuli)
