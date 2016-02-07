@@ -1,0 +1,8 @@
+Prenexní tvar: $\exists x_1 \forall y_1 \exists y_2 ( \neg \varphi (x_1,y_1) \vee  \neg \varphi (x,x) \vee \varphi (y_2,y_2))$
+
+Po negaci: $\forall x_1 \exists y_1 \forall y_2 ( \varphi (x_1,y_1) \wedge  \varphi (x,x) \wedge \neg \varphi (y_2,y_2))$
+
+$x$ je volná premenná, tie sa nesmú preznačovať (strhával bod ak ste preznačili).
+
+Pozn: Pro převod do prenexního tvaru není potřeba odstraňovat implikace. Pokud však je potřeba negovat výraz obsahující implikaci, tak může být nutné negovat implikaci podle známého pravidla  $\neg (A->B) <=> A \wedge \neg B$
+
