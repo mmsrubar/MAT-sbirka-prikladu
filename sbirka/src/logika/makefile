@@ -16,6 +16,8 @@ define reseni =
 		echo -e "\subsubsection{}" >> $@; \
 		if [ -f reseni/$$subsection.pdf ]; then \
 			echo -e "\includegraphics{src/logika/reseni/$$subsection.pdf}" >> $@; \
+		elif [ -f reseni/$$subsection.tex ]; then \
+			echo -e "\input{src/logika/reseni/$$subsection.tex}" >> $@; \
 		elif [ -f reseni/$$subsection.jpg ]; then \
 			echo "\begin{figure}[H]" >> dukazy_log_formuli-reseni.tex; \
 			echo "\centering" >> dukazy_log_formuli-reseni.tex; \
