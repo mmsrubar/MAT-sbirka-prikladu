@@ -18,6 +18,7 @@
 % obrazky
 \usepackage[dvipdf]{graphicx}
 \usepackage{graphicx}
+\usepackage{float}
 % velikost stranky
 \usepackage[top=1.5cm, left=2.5cm, text={17cm, 24cm}, ignorefoot]{geometry}
 
@@ -51,11 +52,12 @@
 \section*{Řešení}
 \setcounter{section}{1}
 \section{Logika}
-%\subsection{Důkazy výrokových formulí}        \input{src/logika/reseni/dukazy_log_formuli.tex}
-%\subsection{Důkazy predikátových formulí}     \input{src/logika/reseni/dukazy_pred_formuli.tex}
-%\subsection{Realizace}                        \input{src/logika/reseni/realizace.tex}
-%\subsection{Prenexní tvar}                    \input{src/logika/reseni/prenexni_tvar.tex}
-%\section{Algebra}
+\subsection{Důkazy výrokových formulí}      \input{src/logika/dukazy_log_formuli-reseni.tex}
+\subsection{Důkazy predikátových formulí}   \input{src/logika/dukazy_pred_formuli-reseni.tex}
+\subsection{Realizace}                      \input{src/logika/realizace-reseni.tex}
+\subsection{Prenexní tvar}                  \input{src/logika/prenexni_tvar-reseni.tex}
+
+\section{Algebra}
 %\subsection{Grupy, podgrupy, cyklické grupy}  \input{src/algebra/reseni/grupy.tex}
 %\subsection{Morfismy}                         \input{src/algebra/reseni/morfismy.tex}
 %\subsection{Kongruence}                       \input{src/algebra/reseni/kongruence.tex}
