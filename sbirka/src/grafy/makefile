@@ -18,7 +18,7 @@ define reseni =
 		subsection=$${f%%.*}; \
 		echo -e "\subsubsection{}" >> $@; \
 		if [ -f reseni/$$subsection.pdf ]; then \
-			echo -e "\includegraphics{src/grafy/reseni/$$subsection.pdf}" >> $@; \
+			echo -e "\includegraphics[width=400pt,height=800pt,keepaspectratio=true]{src/grafy/reseni/$$subsection.pdf}" >> $@; \
 		elif [ -f reseni/$$subsection.tex ]; then \
 			echo -e "\input{src/grafy/reseni/$$subsection.tex}" >> $@; \
 		elif [ -f reseni/$$subsection.jpg ]; then \
