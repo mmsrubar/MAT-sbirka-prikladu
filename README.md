@@ -1,4 +1,4 @@
-# INSTALL
+# INSTALACE
 Pro úspěšný překlad nového PDFka je na Fedoře 23 potřeba nainstalovat tyto balíky:
 
 ```bash
@@ -8,7 +8,7 @@ dnf install -y texlive texlive-cslatex texlive-collection-langczechslovak xfig
 PRIDANI NOVEHO ZADANI
 =====================
 
-Over si, ze je zadani spravne pomocí příkazu:
+Ověř si, zda je zadání správné pomocí příkazu:
 
 make ARGS='cesta-k-latexovemu-zadani' single.pdf
 
