@@ -32,7 +32,7 @@ define reseni =
 			echo "\includegraphics[width=90mm]{src/grafy/reseni/$$subsection.png}" >> $@; \
 			echo "\end{figure}" >> $@; \
 		else \
-			echo "Vyřešil si tento příklad? Pak jej naskenuj/vyfoť a nahraj na github" >> $@; \
+			echo "Vyřešil si tento příklad? Přidej ho sem (na githubu najdeš instrukce)." >> $@; \
 		fi \
 	done
 endef
