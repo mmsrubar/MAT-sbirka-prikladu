@@ -36,3 +36,9 @@ Jestliže si k příkladu napsal vytvořil i řešení, pojmenuj jej stejně a u
 do složky **src/grafy/reseni/**. Řešení může být ve formátech tex, pdf, png nebo
 jpg. Řešením ve formě obrázku bude automaticky upravena velikost, aby byly ve
 sbírce čitelné.
+
+# Metriky: příkady/řešení
+Logika: 58/29  
+Algebra: 55/28  
+Funkcionální analýza: 20/11  
+Grafy: 27/13
