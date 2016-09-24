@@ -1,11 +1,11 @@
 # Překlad
-Pro úspěšný překlad nového PDFka je na Fedoře 23 potřeba nainstalovat tyto závisloti:
+Pro úspěšný překlad nového PDF na Fedoře 23 je potřeba nainstalovat tyto závisloti:
 
 ```bash
-dnf install -y texlive texlive-cslatex texlive-collection-langczechslovak xfig
+sudo dnf install texlive texlive-cslatex texlive-collection-langczechslovak xfig
 ```
 
-Vytvoření výsledného pdf *sbirka.pdf* je možné spuštením make:
+Vytvoření výsledného PDF *sbirka.pdf* je možné spuštením příkazu make:
 
 ```bash
 make
