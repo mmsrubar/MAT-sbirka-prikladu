@@ -38,7 +38,7 @@ jpg. Řešením ve formě obrázku bude automaticky upravena velikost, aby byly 
 sbírce čitelné.
 
 # Metriky: příkady/řešení
-Logika: 58/29  
+Logika: 58/34  
 Algebra: 55/28  
 Funkcionální analýza: 20/11  
 Grafy: 27/13
